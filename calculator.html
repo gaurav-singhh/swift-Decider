@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Payment Page</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Travel Budget</h1>
+
+      <form id="paymentForm">
+        <label for="destination">Select Destination:</label>
+        <select id="destination" required>
+          <option value="" disabled selected>Select Destination</option>
+          <option value="Pondicherry">Pondicherry</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Ladakh">Ladakh</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Kedarnath">Kedarnath</option>
+          <option value="Goa">Goa</option>
+        </select>
+
+        <label for="days">Number of Days:</label>
+        <input
+          type="number"
+          id="days"
+          min="1"
+          required
+          placeholder="Number of Days"
+        />
+
+        <label for="person">Number of Person:</label>
+        <input
+          type="number"
+          id="person"
+          min="1"
+          required
+          placeholder="Number of person"
+        />
+
+        <label for="transportation">Mode of Green Transportation:</label>
+        <select id="transportation" required>
+          <option value="" disabled selected>Select Mode</option>
+          <option value="Train">Train</option>
+          <option value="Plane">Plane</option>
+          <option value="Bus">Electric Bus</option>
+          <option value="Cab">CNG Cab</option>
+        </select>
+
+        <label for="Stay">Eco-Friendly Stays:</label>
+        <select id="Stay" required>
+          <option value="" disabled selected>Select Stay</option>
+          <option value="Hotel">GreenEarth Certified Hotel</option>
+          <option value="Resort">Travel-Life Certified Resort</option>
+          <option value="Apartment">Green Apartment</option>
+          <option value="Villa">Nature-friendly Villa</option>
+          <option value="Cottage">Sustainable Cottage</option>
+        </select>
+
+        <label for="local">Local Eco-Tours:</label>
+        <select id="local" required>
+          <option value="" disabled selected>Select Tours</option>
+          <option value="Hotel">Eco Rickshaw</option>
+          <option value="Resort">Electric Scooty</option>
+          <option value="Apartment">CNG Auto-Rickshaw</option>
+          <option value="Villa">Nature-friendly Cycle</option>
+          <option value="Cottage">Electric Metro</option>
+        </select>
+
+        <button type="button" onclick="calculateFare()">Calculate Fare</button>
+
+        <h3>Total Fare: ₹<span id="totalFare">0.00</span></h3>
+
+        <a id="Resume" href="Payment.html">Proceed to Payment</a>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

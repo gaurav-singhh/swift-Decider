@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="carboncal.css" />
+    <script src="carboncal2.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Travel Carbon Footprint Calculator</h1>
+
+      <form id="paymentForm">
+        <label for="destination">Select Destination:</label>
+        <select id="destination" required>
+          <option value="" disabled selected>Select Destination</option>
+          <option value="Pondicherry">Pondicherry</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Ladakh">Ladakh</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Kedarnath">Kedarnath</option>
+          <option value="Goa">Goa</option>
+        </select>
+
+
+        <label for="transportation">Mode of Transportation:</label>
+        <select id="transportation" required>
+          <option value="" disabled selected>Select Mode</option>
+          <option value="Train">Train</option>
+          <option value="Plane">Plane</option>
+          <option value="DieselBus">Diesel Bus</option>
+          <option value="PetrolBus">Petrol Bus</option>
+          <option value="ElectricBus">Electric Bus</option>
+          <option value="CNGBus">CNG Bus</option>
+          <option value="PetrolCab">Petrol Cab</option>
+          <option value="DieselCab">Diesel Cab</option>
+          <option value="ElectricCab">Electric Cab</option>
+          <option value="CNGCab">CNG Cab</option>
+        </select>
+
+        <label for="Stay">Stays:</label>
+        <select id="Stay" required>
+          <option value="" disabled selected>Select Stay</option>
+          <option value="NormalHotel">Normal Hotel</option>
+          <option value="CityBunglow">City Bunglow</option>
+          <option value="InTownApartment">In Town Apartment</option>
+          <option value="5starHotel">5 star Hotel</option>
+          <option value="CityVilla">City Villa</option>
+          <option value="GreenEarthCertifiedHotel">GreenEarth Certified Hotel</option>
+          <option value="TravelLifeCertifiedResort">Travel-Life Certified Resort</option>
+          <option value="GreenApartment">Green Apartment</option>
+          <option value="NaturefriendlyVilla">Nature-friendly Villa</option>
+          <option value="SustainableCottage">Sustainable Cottage</option>
+        </select>
+
+        <label for="local">Local Tours:</label>
+        <select id="local" required>
+          <option value="" disabled selected>Select Tours</option>
+          <option value="Mode">Motor Cycle</option>
+          <option value="CNGScooty">CNG Scooty</option>
+          <option value="AutoRickshaw">Auto-Rickshaw</option>
+          <option value="DieselMotorCycle">Diesel Motor Cycle</option>
+          <option value="DieselAutoRickshaw">Diesel Auto-Rickshaw</option>
+          <option value="PetrolMotorCycle">Petrol Motor Cycle</option>
+          <option value="PetrolScooty">Petrol Scooty</option>
+          <option value="PetrolAutoRickshaw">Petrol Auto-Rickshaw</option>
+          <option value="FossilfueledTram">Fossil fueled Tram</option>
+          <option value="ManualRickshaw">Manual Rickshaw</option>
+          <option value="EcoRickshaw">Eco Rickshaw</option>
+          <option value="ElectricScooty">Electric Scooty</option>
+          <option value="CNGAutRickshaw">CNG Auto-Rickshaw</option>
+          <option value="NaturefriendlyCycle">Nature-friendly Cycle</option>
+          <option value="ElectricMetro">Electric Metro</option>
+        </select>
+
+        <label for="days">Number of Days:</label>
+        <input
+          type="number"
+          id="days"
+          min="1"
+          required
+          placeholder="Number of Days"
+        />
+
+        <label for="person">Number of Person:</label>
+        <input
+          type="number"
+          id="person"
+          min="1"
+          required
+          placeholder="Number of person"
+        />
+
+        <button type="button" onclick="calculateFare()">Calculate Carbon Emission</button>
+
+        <h3>Total CO<sub>2</sub>: <span id="totalFare">0.00</span> KG</h3>
+
+        <a id="Resume" href="index.html">Back to home</a>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

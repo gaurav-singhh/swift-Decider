@@ -1,0 +1,91 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+
+}
+
+.card {
+  border: 1px solid white;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  width: 45%; /* Adjust the width as needed */
+  max-width: 400px; /* Maximum width of each card */
+
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.text {
+  padding: 20px;
+}
+
+.card-box {
+  display: flex;
+  flex-flow: row;
+  background-color: rgb(157, 243, 157);
+  font-size: 18px;
+  font-family: Roboto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.time {
+  flex: 1;
+}
+
+.location {
+  flex: 2;
+}
+
+.cost {
+  color: #012a69;
+  font-size: 20px;
+}
+
+.zoom-img {
+  position: relative;
+  overflow: hidden;
+  height: 320px;
+}
+
+.zoom-img .img-card {
+  position: absolute;
+  overflow: hidden;
+}
+
+.img-card img {
+  transition: transform 0.8s ease;
+}
+
+.card:hover .zoom-img img {
+  transform: scale(1.1);
+}
+#pic{
+    margin-top: 80px;
+    margin-left: 78px;
+}
+#picx{
+  margin-left: 40px;
+  margin-top: 110px;
+}

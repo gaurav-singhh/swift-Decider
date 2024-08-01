@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css" />
+    <script src="gg.js"></script>
+  </head>
+  <body>
+    
+    <div class="container">
+      <br><br><br>
+      <a id="hhh" href="index.html">Back to home</a>
+      <h1>Sign Up to Travel</h1>
+
+      <form id="signupForm">
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          required
+          placeholder="Enter First Name"
+        />
+
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          id="lastName"
+          required
+          placeholder="Enter Last Name"
+        />
+        <label for="lastName">Date of Birth:</label>
+        <input
+          type="text"
+          id="lastName"
+          required
+          placeholder="Enter Date of Birth"
+        />
+        <label for="EmailAddress">Email Address:</label>
+        <input type="text" id="Email" required placeholder="Enter Email" />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input
+          type="tel"
+          id="contactNumber"
+          required
+          placeholder="Enter Contact Number"
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder="Enter Password"
+        />
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          required
+          placeholder="Confirm Password"
+        />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

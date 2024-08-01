@@ -1,0 +1,20 @@
+h1{
+
+    text-align: center;
+
+}
+#up{
+    margin-top: 10%;
+}
+body{
+    margin: 0;
+    padding: 0;
+     background-image: url("loading.avif");
+    background-size: cover; 
+    background-position: center; 
+    font-family: 'Glass Antiqua', cursive;
+    /* Additional styles */
+}
+#kl{
+    margin-top: 500px;
+}
